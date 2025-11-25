@@ -23,7 +23,7 @@ submitBtn.addEventListener("click", (e) => {
         msgDisplay.style.color = "black";
         console.log(`Correct! Player won ₦2,000,000 with guess ${playerGuess}`)
     } else {
-        msgDisplay.textContent = "You lost this round. Try again to have a chance to win!";
+        msgDisplay.textContent = "You lost this round 😒, bot chose ${random}. Try again to have a chance to win!";
         console.log(`Wrong guess ${playerGuess}. Try again.`)
     }
 })
