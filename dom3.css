@@ -1,64 +1,77 @@
-*{
-    margin: 0px;
+/* ----- General Page Setup ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    background: linear-gradient(blue, white);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
+
+body {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     height: 100vh;
-}
-.btn{
-    background-color: rgb(4, 236, 19);
-    border: none;
-    border-radius: 6px;
-    color: rgb(254, 253, 250);
-    width: 250px;
-    position: relative;
-    top: 10px;
-    /* left: 45px; */
-}
-#numberBtn{
-    border-radius: 100%;
-    width: 150px;
-    height: 150px;
-    border: 4px dotted rgb(228, 240, 7);
-    /* background-color: rgb(0, 0, 0); */
-    text-align: center;
-    font-size: 50px;
-    
-}
-.carrier{
-    border: 2px solid blue;
-    width: 90%;
-    height: 70vh;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background: conic-gradient(black, white);
-    border-radius: 6px;
-}
-.carrier h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(201, 10, 10);
-}
-.btn{
-    width: 40%;
-    height: 30px;
-}
-#headMsg{
-    position: relative;
-    /* bottom: 50px; */
-    /* top: 10px; */
-    left: 39px;
-    color: rgb(57, 32, 184);
-}
-#form{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/* ----- Main Container ----- */
+.carrier {
+    text-align: center;
+    padding: 30px;
+    width: 350px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+/* ----- Input Field ----- */
+#numberBtn {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    text-align: center;
+    transition: 0.2s ease;
+}
+
+#numberBtn:focus {
+    box-shadow: 0 0 10px rgba(255,255,255,0.7);
+}
+
+/* ----- Button ----- */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #2575fc;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: #f2f2f2;
+}
+
+/* Message Output */
+#headMsg {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
